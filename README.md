@@ -12,10 +12,23 @@ In this paper, we show zero-shot, few-shot, and fully supervised performance of 
 - [Acknowledgement](#acknowledgement)
 
 ## Dependencies
-TODO
+Install all the required dependencies for the project using [conda](https://conda.io/).
+
+Create a new conda environment using the environment.yaml file and then activate it as follows:
+```
+conda env create -f environment.yaml
+conda activate flip
+```
 
 ## Usage
-TODO
+The pre-processed Dataset can be downloaded from this link: [birds.zip](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/rohit_bharadwaj_mbzuai_ac_ae/EXq-t3obC6ZPrarkU8Bjoe0BRVvOIud1CAKRgH2-8G10zg?e=PUcP3n)
+
+* Download and unzip the birds folder into `data/` directory.
+* Zero-shot code can be run by running `CLIP_CUB_zeroshot_KNN.ipynb` notebook.
+* `Few-shot` and `fully-supervised` code can be found in their respective folders.
+* The augmented training dataset, which was generated using fine-tuned diffusion model, can be downloaded from: [augmented.zip](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/rohit_bharadwaj_mbzuai_ac_ae/Ee8e4KIX3lxEpX_mtn-k14EBoKC5p0l4mwL9lPTLgtglzQ?e=fqdyyD)
+* The fine-tuned diffusion model's weights are also provided and can be downloaded from: [diffusion_weights.ckpt](). Save the weights in `diffusion-code/models/` folder, and to generate samples from the model, run `diffusion-code/inference/inference_512.py` modifying the paths accordingly.
+
 
 ## Team
 - [Murtadha Aljubran](mailto:murtadha.aljubran@mbzuai.ac.ae)
