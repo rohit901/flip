@@ -1,7 +1,8 @@
 # FLIP: Fine-Grained Object Classification using CLIP
 
-Code repository for our AI701 team project titled "FLIP: Fine-Grained Object Classification using CLIP". 
+Code repository for our AI701 team project titled "FLIP: Fine-Grained Object Classification using CLIP".
 
+[![paper](https://img.shields.io/badge/-Paper-red)](https://drive.google.com/file/d/1Td0HP57i_JCHlwJC_I_-A4L83Ve1FDjH/view?usp=share_link)
 ## Abstract
 In this paper, we show zero-shot, few-shot, and fully supervised performance of the Contrastive Language–Image Pre-training (CLIP) models on a fine-grained classification task with a bird dataset, CUB-200-2011. The baseline CLIP model gives an accuracy of 45.56\%, and using KNN; we achieved an accuracy of around 60\% on the pre-trained CLIP model. We also show that we can achieve an average of 3.5\% gain in zero-shot performance after fine-tuning CLIP's image encoder using captions only. Furthermore, a  hybrid model with fine-tuned CLIP's image and text encoders passed through a fully connected feedforward neural network has demonstrated the best performance of 75.18\% accuracy over the CUB-200-2011 dataset. We have also experimented with data augmentation with a fine-tuned Stable Diffusion model. However, it did not lead to an improvement which might be due to the limited number of unique examples that were generated as well as the suspected overlap with the dataset of around 400 million image/caption pairs used in the pre-trained CLIP model.
 
